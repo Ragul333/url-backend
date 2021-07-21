@@ -7,5 +7,7 @@ routers.post('/login',authUser)
 routers.post('/register', registerUser)
 routers.post('/reset', resetPassword)
 routers.post('/newpassword',newpassword)
-routers.route('/profile').get(protect, getUserProfile)
+routers.route('/profile').get(getUserProfile)
+
+
 module.exports = { routers }
